@@ -9,9 +9,9 @@ import java.util.List;
 public class ThreadMain {
     
     public static void main(String[] args) throws Exception {
-        List<String> list = Arrays.asList("a", "b");
-        String s = list.toString();
-        System.out.println(s);
+//        List<String> list = Arrays.asList("a", "b");
+//        String s = list.toString();
+//        System.out.println(s);
         //ThreadDemo1
 //        ThreadDemo1 threadDemo1 = new ThreadDemo1();
 //        for (int i = 0; i < 5; i++) {
@@ -39,26 +39,24 @@ public class ThreadMain {
 //        }
 
         //ThreadLock
-        Count count = new Count();
-        for (int i = 0; i < 2; i++) {
-            new Thread() {
-                @Override
-                public void run() {
-                    count.get();
-                }
-            }.start();
-        }
-        Thread.sleep(10);
-        for (int i = 0; i < 2; i++) {
-            new Thread() {
-                @Override
-                public void run() {
-                    count.put();
-                }
-            }.start();
-        }
-
-        System.out.println(1111);
+//        Count count = new Count();
+//        for (int i = 0; i < 2; i++) {
+//            new Thread() {
+//                @Override
+//                public void run() {
+//                    count.get();
+//                }
+//            }.start();
+//        }
+//        Thread.sleep(10);
+//        for (int i = 0; i < 2; i++) {
+//            new Thread() {
+//                @Override
+//                public void run() {
+//                    count.put();
+//                }
+//            }.start();
+//        }
     }
 
 }

@@ -6,7 +6,7 @@ import java.util.concurrent.Exchanger;
 /**
  * Created by fengshiwei on 2018/9/26.
  */
-public class Consumer implements Runnable {
+public class Consumer implements Runnable, Interface2 {
 
     private List<Object> list;
 
